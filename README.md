@@ -1,3 +1,5 @@
+:construction: **THIS LIBRARY USES AN UNRELEASED VERSION OF THE PEBBLE SDK. DO NOT USE IN YOUR APPS.** :construction:
+
 # Loading Screen
 
 A Pebble library for displaying loading / setup screens in your app.
