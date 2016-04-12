@@ -1,0 +1,54 @@
+{
+  "name": "pebble-loading-screen",
+  "version": "1.0.0",
+  "description": "A Pebble library to handle displaying loading (and similar) screens",
+  "main": "src/c/loading-screen.c",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/smallstoneapps/loading-screen.git"
+  },
+  "keywords": [
+    "pebble"
+  ],
+  "author": "Matthew Tole <pebble@matthewtole.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smallstoneapps/loading-screen/issues"
+  },
+  "homepage": "https://github.com/smallstoneapps/loading-screen#readme",
+  "pebble": {
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "png",
+          "name": "ICON_PHONE",
+          "file": "images/phone.png"
+        },
+        {
+          "type": "png",
+          "name": "ICON_REFRESH",
+          "file": "images/refresh.png"
+        }
+      ]
+    }
+  },
+  "files": [
+    "dist.zip",
+    "src/",
+    "include/"
+  ],
+  "dependencies": {
+    "pebble-assist": "^1.0.0"
+  },
+  "devDependencies": {}
+}
