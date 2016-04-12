@@ -1,6 +1,6 @@
 {
   "name": "pebble-loading-screen",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A Pebble library to handle displaying loading (and similar) screens",
   "main": "src/c/loading-screen.c",
   "scripts": {

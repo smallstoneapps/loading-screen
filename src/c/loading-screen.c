@@ -13,7 +13,7 @@ static BitmapLayer* s_layer_bitmap;
 static GBitmap* s_bitmap_refresh;
 
 
-void win_loading_init(void) {
+void loading_screen_init(void) {
   s_window = window_create();
   window_set_background_color(s_window, COLOR_FALLBACK(GColorDarkCandyAppleRed, GColorBlack));
   window_set_window_handlers(s_window, (WindowHandlers){
@@ -25,16 +25,20 @@ void win_loading_init(void) {
   #endif
 }
 
-void win_loading_deinit(void) {
+void loading_screen_deinit(void) {
   window_destroy(s_window);
 }
 
-void win_loading_show(void) {
+void loading_screen_show(void) {
   window_stack_push(s_window, false);
 }
 
-void win_loading_hide(void) {
+void loading_screen_hide(void) {
   window_stack_remove(s_window, false);
+}
+
+bool loading_screen_is_visible(void) {
+  return window_stack_get_top_window() == s_window;
 }
 
 static void window_load(Window* window) {

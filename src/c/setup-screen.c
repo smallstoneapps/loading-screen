@@ -13,7 +13,7 @@ static BitmapLayer* s_layer_bitmap;
 static GBitmap* s_bitmap_phone;
 
 
-void win_setup_init(void) {
+void setup_screen_init(void) {
   s_window = window_create();
   window_set_background_color(s_window, COLOR_FALLBACK(GColorDarkCandyAppleRed, GColorBlack));
   window_set_window_handlers(s_window, (WindowHandlers){
@@ -25,19 +25,19 @@ void win_setup_init(void) {
   #endif
 }
 
-void win_setup_deinit(void) {
+void setup_screen_deinit(void) {
   window_destroy(s_window);
 }
 
-void win_setup_show(void) {
+void setup_screen_show(void) {
   window_stack_push(s_window, false);
 }
 
-void win_setup_hide(void) {
+void setup_screen_hide(void) {
   window_stack_remove(s_window, false);
 }
 
-bool win_setup_is_visible(void) {
+bool setup_screen_is_visible(void) {
   return window_stack_get_top_window() == s_window;
 }
 

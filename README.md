@@ -16,13 +16,13 @@ npm install --save pebble-loading-screen
 #include "pebble-loading-screen/loading-screen.h"
 
 // Must be called once before any other calls
-win_loading_init();
+loading_screen_init();
 
 // Pushes the loading screen onto the window stack
-win_loading_show();
+loading_screen_show();
 
 // Removes the loading screen from the window stack
-win_loading_hide();
+loading_screen_hide();
 ```
 
 ## Screenshots
