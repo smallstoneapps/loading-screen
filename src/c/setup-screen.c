@@ -56,7 +56,14 @@ static void window_load(Window* window) {
   s_bitmap_phone = gbitmap_create_with_resource(RESOURCE_ID_ICON_PHONE);
   icon_size = gbitmap_get_bounds(s_bitmap_phone).size;
 
-  s_layer_bitmap = bitmap_layer_create(GRect(window_size.w / 2 - icon_size.w / 2, window_size.h / 2 - icon_size.h / 2, icon_size.w, icon_size.h));
+  s_layer_bitmap = bitmap_layer_create(
+    GRect(
+      window_size.w / 2 - icon_size.w / 2,
+      window_size.h / 2 - icon_size.h / 2,
+      icon_size.w,
+      icon_size.h
+    )
+  );
   bitmap_layer_set_bitmap(s_layer_bitmap, s_bitmap_phone);
   bitmap_layer_set_compositing_mode(s_layer_bitmap, GCompOpSet);
   bitmap_layer_add_to_window(s_layer_bitmap, s_window);
