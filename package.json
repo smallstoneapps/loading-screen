@@ -1,7 +1,7 @@
 {
-  "name": "pebble-loading-screen",
-  "version": "2.0.3",
-  "description": "A Pebble library to handle displaying loading (and similar) screens",
+  "name": "@smallstoneapps/loading-screen",
+  "version": "2.1.0",
+  "description": "Pebble library to handle displaying loading (and similar) screens",
   "main": "src/c/loading-screen.c",
   "scripts": {
     "test": "make"
@@ -48,7 +48,7 @@
     "include/"
   ],
   "dependencies": {
-    "pebble-assist": "^1.0.0"
+    "@smallstoneapps/utils": "^1.1.1"
   },
   "devDependencies": {}
 }
