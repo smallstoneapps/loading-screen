@@ -1,6 +1,6 @@
 {
   "name": "@smallstoneapps/loading-screen",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Pebble library to handle displaying loading (and similar) screens",
   "main": "src/c/loading-screen.c",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/smallstoneapps/loading-screen#readme",
   "pebble": {
+    "projectType": "package",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "targetPlatforms": [
