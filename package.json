@@ -1,6 +1,6 @@
 {
   "name": "@smallstoneapps/loading-screen",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Pebble library to handle displaying loading (and similar) screens",
   "main": "src/c/loading-screen.c",
   "scripts": {
@@ -26,7 +26,8 @@
     "targetPlatforms": [
       "aplite",
       "basalt",
-      "chalk"
+      "chalk",
+      "diorite"
     ],
     "resources": {
       "media": [
