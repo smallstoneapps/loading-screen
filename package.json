@@ -1,6 +1,6 @@
 {
   "name": "@smallstoneapps/loading-screen",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Pebble library to handle displaying loading (and similar) screens",
   "main": "src/c/loading-screen.c",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+ssh://git@github.com/smallstoneapps/loading-screen.git"
   },
   "keywords": [
-    "pebble"
+    "pebble-package"
   ],
   "author": "Matthew Tole <pebble@matthewtole.com>",
   "license": "MIT",
